@@ -1,0 +1,17 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+plt.subplot(1, 2, 1)
+data = np.random.normal(2.0, 3.0, 1000)
+plt.hist(data, bins=20, density=True)
+plt.xlabel('Value')
+plt.ylabel('Probability')
+plt.title('Histogram')
+
+plt.subplot(1, 2, 2)
+data = np.random.normal(2.0, 3.0, 1000)
+plt.hist(data, bins=20, histtype='step')
+plt.xlabel('Value')
+plt.ylabel('Probability')
+plt.title('Histogram')
+plt.show()
