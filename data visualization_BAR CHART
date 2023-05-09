@@ -1,0 +1,22 @@
+import matplotlib.pyplot as plt
+import numpy as np
+import numpy
+Y=['A', 'B','C', 'D','E']
+plt.subplot(2, 1, 1)
+Data1 = numpy.random.random_integers(24, 40, 5)
+print("1-dimensional random integer array \n", Data1,"\n")
+tick_label = ['A', 'B', 'C', 'D', 'E']
+plt.bar(Y, Data1, tick_label = tick_label, width = 0.8, color = ['red', 'green'])
+plt.xlabel('x - axis')
+plt.ylabel('Temperature')
+plt.title('Random Temperature plot')
+
+plt.subplot(2, 1, 2)
+listsize=5
+Data2= numpy.random.uniform(24.5, 40.0,listsize)
+print("1- dimensional random uniform array  \n", Data2,"\n")
+plt.bar(Y, Data2,color = ['yellow', 'blue'] )
+plt.xlabel('x - axis')
+plt.ylabel('Temperature')
+plt.title('Random Temperature plot')
+plt.show()
