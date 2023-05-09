@@ -1,0 +1,10 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+x = np.random.randn(1, 50)
+y = np.random.randn(1,50)
+plt.scatter(x, y, color='blue', s=50)
+plt.xlabel('X axis')
+plt.ylabel('Y axis')
+plt.title('Scatter Plot')
+plt.show()
