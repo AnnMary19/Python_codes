@@ -1,0 +1,13 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+x = np.arange(0, 10, 0.2);
+y = np.sin(x)
+z=np.cos(x)
+plt.stem(x, y, 'r',label = "sine")
+plt.stem(x, z, 'g', label = "cosine")
+plt.xlabel('x - axis')
+plt.ylabel('y - axis')
+plt.title('sine and cosine  stem plot on same plot with suitable legends ')
+plt.legend()
+plt.show()
