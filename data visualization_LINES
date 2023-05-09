@@ -1,0 +1,12 @@
+import numpy as np
+import matplotlib.pyplot as plt
+x = np.arange(0, 10, 0.1);
+y = np.sin(x)
+z=np.cos(x)
+plt.plot(x, y, ':b',label = "sine")
+plt.plot(x, z, '--c', label = "cosine")
+plt.xlabel('x - axis')
+plt.ylabel('y - axis')
+plt.title('sine and cosine waveform on same plot with suitable legends ')
+plt.legend()
+plt.show()
